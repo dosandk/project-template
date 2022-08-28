@@ -25,3 +25,4 @@
 ## Tests and coverage
 
 - jest
+- jest-dom
