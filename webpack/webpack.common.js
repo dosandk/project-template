@@ -91,6 +91,18 @@ module.exports = {
           ),
           to: 'assets/[path][name][ext]',
           noErrorOnMissing: true
+        },
+        {
+          from: path.join(
+            __dirname,
+            '../src/service-worker.js'
+          )
+        },
+        {
+          from: path.join(
+            __dirname,
+            '../src/manifest.json'
+          )
         }
       ]
     })

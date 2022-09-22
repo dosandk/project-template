@@ -15,4 +15,22 @@ export default class Hello extends BaseComponent {
       </div>
     `;
   }
+
+  afterRender() {
+    const btn = this.element.querySelector(
+      '.btn-primary'
+    );
+
+    btn.addEventListener('click', () => {
+      setTimeout(() => {
+        navigator.serviceWorker.ready
+          .then((registration) =>
+            registration.sync.register(
+              'some-sync-tag'
+            )
+          )
+          .catch((error) => console.error(error));
+      }, 3000);
+    });
+  }
 }

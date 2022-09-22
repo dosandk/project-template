@@ -20,6 +20,7 @@ export default class BaseComponent {
 
   initialize() {
     this.render();
+    this.afterRender();
   }
 
   afterInitialize() {
@@ -29,6 +30,10 @@ export default class BaseComponent {
   render() {
     this.element = this.createElement();
     this.subElements = this.getSubElements();
+  }
+
+  afterRender() {
+    /* abstract method */
   }
 
   get template() {

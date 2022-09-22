@@ -1,0 +1,21 @@
+{
+  "name": "Project template",
+  "short_name": "Template",
+  "display": "standalone",
+  "background_color": "#6ee8fb",
+  "theme_color": "#ffffff",
+  "start_url": ".",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./assets/favicons/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/favicons/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
